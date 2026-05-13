@@ -28,8 +28,8 @@ def model_slug(model_name: str) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", default="all-mpnet-base-v2")
-    parser.add_argument("--batch-size", type=int, default=32)
+    parser.add_argument("--model", default="intfloat/e5-large-v2")
+    parser.add_argument("--batch-size", type=int, default=16)
     args = parser.parse_args()
 
     if not PROCESSED.exists():
